@@ -1,0 +1,488 @@
+@font-face {
+    font-family: 'Yeongdo-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+font-family: 'LeeSeoyun';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+    font-family: 'Unilab';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205-2@1.0/Unilab.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*스크롤바 영역*/
+body::-webkit-scrollbar {
+    width: 10px;  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 1%; /* 스크롤바의 길이 */
+    background: #26e6accc; /* 스크롤바의 색상 */
+
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+    border: 1px solid black;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(220, 248, 178);
+}
+header{
+    position: relative;
+    border: 5px ridge rgb(202, 202, 193);
+    width: 1399px;
+    margin-left: 250px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.logo{
+    width: 250px; 
+    height: 70px;  
+    font-family: 'Yeongdo-Rg'; 
+    font-size: 270%; 
+    text-align: center; 
+    background-color: aliceblue;
+    border-right: 5px ridge rgb(202, 202, 193);
+    line-height: 1.8;
+    text-shadow: -3px 0 #000, 0 3px #000, 3px 0 #000, 0 -3px #000;
+}
+.logo-a{
+    color: orange;
+}
+a{
+    text-decoration: none;
+}
+.main-content{
+    border: 10px ridge rgb(202, 202, 193);
+    width: 1079px;
+    height: 7730px;
+    margin-left: 250px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    position: relative;
+}
+.ui{
+    border: 10px ridge rgb(202, 202, 193);
+    border-left: 0px;
+    width: 300px;
+    height: 7730px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 1349px;
+}
+#left{
+    margin-left: 650px;
+    font-size: 17px;
+}
+.nav{
+    border-bottom: 10px ridge rgb(202, 202, 193);
+    padding: 50px 100px;
+    width: 879px;
+    height: 1000px;
+    float: left;
+    color: rgb(0, 0, 0);
+    font-size: 21px;
+    font-family: 'LeeSeoyun';
+    position: absolute;
+    top: 15px;
+}
+.nav2{
+    border-bottom: 10px ridge rgb(202, 202, 193);
+    padding: 50px 100px;
+    width: 879px;
+    height: 1400px;
+    float: left;
+    color: rgb(0, 0, 0);
+    font-size: 21px;
+    font-family: 'LeeSeoyun';
+    position: absolute;
+    top: 1148px;
+}
+.nav-bold{
+    font-weight: bold;
+}
+.nav-title{
+    width: 800px;
+    height: 0px;
+    margin: 0px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'LeeSeoyun';
+    position: absolute;
+}
+.nav-title2{
+    width: 800px;
+    height: 0px;
+    margin: 0px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'LeeSeoyun';
+    position: absolute;
+    top: 1128px;
+}
+.ui-ul1{
+    list-style-type: upper-roman;
+    color: rgb(0, 0, 0);
+    font-family: 'LeeSeoyun';
+}
+li{
+    padding: 10px;
+}
+.t-1{
+    border-radius: 10px;
+    background-color: rgb(87, 164, 231);
+    width: 100px;
+    text-align: center;
+}
+.hover-type{
+    color: rgb(0, 0, 0);
+}
+.hover-type:hover{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.sub-title{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-family: 'LeeSeoyun';
+    background-color: rgb(87, 164, 231);
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    right: 50px;
+    top: -5px;
+    line-height: 1.3;
+}
+.category{
+    font-family: 'Unilab'; 
+    position: absolute;
+    right: 260px;
+    top: -10px;
+    padding: 5px;
+    border-bottom: 2px dashed black;
+    height: 27px;
+
+}
+.p{
+    position: absolute;
+    width: 50px;
+    right: 400px;
+    top: 3px;
+    border-radius: 10px;
+    border: 1px solid rgb(167, 152, 152);
+}
+.p1{
+    position: absolute;
+    width: 860px;
+    height: 400px;
+    left: 100px;
+    top: 470px;
+    border-radius: 10px;
+    border: 3px solid rgb(167, 152, 152);
+}
+
+.menu{
+    position: fixed;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    right: 75px;
+    top: 400px;
+    width: 90px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'SBAggroM';
+}
+.menu-s1{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    height: 23px;
+    left: 14px;
+    top: 20px;
+    background-color: red;
+    width: 60px;
+    line-height: 1.4;
+}    
+.menu-s2{
+    position: absolute;
+    top: 70px;
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    height: 23px;
+    left: 3px;
+    width: 80px;
+    background-color: black;
+    line-height: 1.4;
+}    
+.menu-s3{
+    position: absolute;
+    top: 125px;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    height: 23px;
+    left: 4px;
+    width: 80px;
+    background-color: rgb(25, 0, 250);
+    line-height: 1.4;
+}
+.menu-s1:hover{
+    color: yellow;
+}
+.menu-s2:hover{
+    color: yellow;
+}
+.menu-s3:hover{
+    color: yellow;
+}
+.control{
+    padding: absolute;
+    border-bottom: 2px solid black;
+    text-align: center;
+    line-height: 2.5;
+    height: 30px;
+}
+.p2{
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    right: 430px;
+    top: 1130px;
+    border-radius: 10px;
+    border: 1px solid rgb(167, 152, 152);
+    background-color: white;
+}
+.p3{
+    position: absolute;
+    width: 860px;
+    height: 400px;
+    left: 100px;
+    top: 1350px;
+    border-radius: 10px;
+    border: 3px solid rgb(167, 152, 152);
+}
+.p4{
+    position: absolute;
+    width: 860px;
+    height: 400px;
+    left: 100px;
+    top: 2090px;
+    border-radius: 10px;
+    border: 3px solid rgb(167, 152, 152);
+}
+.nav-title3{
+    width: 800px;
+    height: 0px;
+    margin: 0px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'LeeSeoyun';
+    position: absolute;
+    top: 2658px;
+}
+.nav3{
+    border-bottom: 10px ridge rgb(202, 202, 193);
+    padding: 50px 100px;
+    width: 879px;
+    height: 2020px;
+    float: left;
+    color: rgb(0, 0, 0);
+    font-size: 21px;
+    font-family: 'LeeSeoyun';
+    position: absolute;
+    top: 2675px;
+}
+.nav-title4{
+    width: 800px;
+    height: 0px;
+    margin: 0px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'LeeSeoyun';
+    position: absolute;
+    top: 4805px;
+}
+.nav4{
+    border-bottom: 10px ridge rgb(202, 202, 193);
+    padding: 50px 100px;
+    width: 879px;
+    height: 1960px;
+    float: left;
+    color: rgb(0, 0, 0);
+    font-size: 21px;
+    font-family: 'LeeSeoyun';
+    position: absolute;
+    top: 4825px;
+}
+.p5{
+    position: absolute;
+    width: 860px;
+    height: 400px;
+    left: 100px;
+    top: 2850px;
+    border-radius: 10px;
+    border: 3px solid rgb(167, 152, 152);
+}
+.p6{
+    position: absolute;
+    width: 860px;
+    height: 400px;
+    left: 100px;
+    top: 3370px;
+    border-radius: 10px;
+    border: 3px solid rgb(167, 152, 152);
+}
+.p7{
+    position: absolute;
+    width: 860px;
+    height: 400px;
+    left: 100px;
+    top: 3880px;
+    border-radius: 10px;
+    border: 3px solid rgb(167, 152, 152);
+}
+.p8{
+    position: absolute;
+    width: 50px;
+    right: 380px;
+    top: 2663px;
+    border-radius: 10px;
+    border: 1px solid rgb(167, 152, 152);
+    background-color: white;
+}
+.p9{
+    position: absolute;
+    width: 860px;
+    height: 400px;
+    left: 100px;
+    top: 4955px;
+    border-radius: 10px;
+    border: 3px solid rgb(167, 152, 152);
+}
+.p10{
+    position: absolute;
+    width: 860px;
+    height: 400px;
+    left: 100px;
+    top: 5607px;
+    border-radius: 10px;
+    border: 3px solid rgb(167, 152, 152);
+}
+.p11{
+    position: absolute;
+    width: 860px;
+    height: 400px;
+    left: 100px;
+    top: 6215px;
+    border-radius: 10px;
+    border: 3px solid rgb(167, 152, 152);
+}
+.p12{
+    position: absolute;
+    width: 80px;
+    right: 105px;
+    top: 6700px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+}
+#left1{
+    margin-left: 630px;
+    font-size: 17px;
+}
+.p13{
+    position: absolute;
+    width: 50px;
+    right: 540px;
+    top: 4810px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+}
+.nav-title5{
+    width: 800px;
+    height: 0px;
+    margin: 0px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'LeeSeoyun';
+    position: absolute;
+    top: 6895px;
+}
+.nav5{
+    padding: 50px 100px;
+    width: 879px;
+    height: 720px;
+    float: left;
+    color: rgb(0, 0, 0);
+    font-size: 21px;
+    font-family: 'LeeSeoyun';
+    position: absolute;
+    top: 6915px;
+}
+.p14{
+    position: absolute;
+    width: 860px;
+    height: 400px;
+    left: 100px;
+    top: 7045px;
+    border-radius: 10px;
+    border: 3px solid rgb(167, 152, 152);
+}
+.p15{
+    position: absolute;
+    width: 65px;
+    right: 450px;
+    top: 6900px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+}
+.decoration{
+    position: absolute;
+    top: 7840px;
+    left: 250px;
+    width: 1399px;
+    height: 100px;
+    border-top: 10px ridge rgb(202, 202, 193);
+    border-left: 5px solid rgb(202, 202, 193);
+    border-right: 5px solid rgb(202, 202, 193);
+    border-bottom: 5px solid rgb(202, 202, 193);
+    text-align: center;
+    line-height: 1.6;
+    background-color: white;
+}
+.decoration2{
+    position: absolute;
+    top: 7960px;
+    left: 250px;
+    width: 1655px;
+    height: 50px;
+    line-height: 1.6;
+    background-color: rgb(220, 248, 178);
+}

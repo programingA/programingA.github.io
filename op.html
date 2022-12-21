@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의 및 지식 제보하기 창</title>
+    <style>
+        @font-face {
+            font-family: 'EarlyFontDiary';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            background-color: rgb(228, 225, 225);
+        }
+        .main{
+            position: relative;
+            border-radius: 10px;
+            border: 10px solid rgb(228, 83, 83);
+            width: 800px;
+            height: 500px;
+            top: 200px;
+            left: 550px;
+            background-color: rgb(229, 241, 119);
+        }
+        .leaf{
+            position: absolute;
+            width: 10px;
+            height: 60px;
+            background-color: rgb(52, 131, 45);
+            border-radius: 10px;
+            left: 970px;
+            top: 152px;
+            transform: rotate(10deg);
+        }
+        .name{
+            position: absolute;
+            border-radius: 50px;
+            border: 2px solid black;
+            padding: 1px;
+            left: 60px;
+            top: 30px;
+            width: 32px;
+            height: 20px;
+            background-color: black;
+        }
+        .name1{
+            position: absolute;
+            left: 105px;
+            top: 30px;
+        }
+        .font{
+            position: absolute;
+            top: -3px;
+            left: 5px;
+            font-family: 'EarlyFontDiary';
+            color: white;
+            font-size: 13px;
+        }
+        .e-mail{
+            position: absolute;
+            border-radius: 50px;
+            border: 2px solid black;
+            padding: 1px;
+            left: 60px;
+            top: 60px;
+            width: 43px;
+            height: 20px;
+            background-color: black;
+        }
+        .e-mail1{
+            position: absolute;
+            left: 115px;
+            top: 60px;
+        }
+        .problem{
+            position: absolute;
+            top: 150px;
+            left: 60px;
+            background-color: rgb(233, 90, 90);
+            border-radius: 5px;
+            width: 60px;
+            height: 30px;
+        }
+        .problem-font{
+            position: absolute;
+            font-family: 'EarlyFontDiary';
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            top: -8px;
+            left: 12px;
+        }
+        iframe{
+            position: absolute;
+            top: 250px;
+            left: 60px;
+            width: 680px;
+            height: 200px;
+        }
+        .type1{
+            position: absolute;
+            width: 120px;
+            height: 20px;
+            top: 210px;
+            left: 60px;
+            border: 5px outset rgb(233, 90, 90);
+            background-color: rgb(228, 145, 145);
+        }
+        .type1:active{
+            border: 5px inset rgb(233, 90, 90);
+        }
+        .type2{
+            position: absolute;
+            width: 120px;
+            height: 20px;
+            top: 210px;
+            left: 200px;
+            border: 5px outset rgb(233, 90, 90);
+            background-color: rgb(228, 145, 145);
+        }
+        .type2:active{
+            border: 5px inset rgb(233, 90, 90);
+        }
+        .type2-font{
+            position: absolute;
+            font-family: 'EarlyFontDiary';
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            top: -7px;
+            left: 20px;
+        }
+        .type1-font{
+            position: absolute;
+            font-family: 'EarlyFontDiary';
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            top: -8px;
+            left: 6px;
+        }   
+        #sub{
+            all: unset;
+            position: absolute;
+            width: 80px;
+            height: 20px;
+            bottom: 10px;            
+            right: 57px;
+            border: 5px outset rgb(233, 90, 90);
+            background-color: rgb(228, 145, 145);
+            font-family: 'EarlyFontDiary';
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+        #sub:active{
+            border: 5px inset rgb(233, 90, 90);
+        }
+        #home{
+            all: unset;
+            position: absolute;
+            width: 80px;
+            height: 20px;
+            bottom: 10px;            
+            right: 160px;
+            border: 5px outset rgb(233, 90, 90);
+            background-color: rgb(228, 145, 145);
+            font-family: 'EarlyFontDiary';
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+        #home:active{
+            border: 5px inset rgb(233, 90, 90);
+        }
+    </style>
+</head>
+<body>
+    <div class="leaf"></div>
+    <div class="main">
+        <div class="name">
+            <h1 class="font">이름</h1>
+        </div>
+        <div class="name1">
+            <input type="text" autofocus required placeholder="이름을 입력해주세요">
+        </div>
+        <div class="e-mail">
+            <h1 class="font">이메일</h1>
+        </div>
+        <div class="e-mail1">
+            <input type="email" placeholder="이메일을 입력해주세요">
+        </div>
+        <div class="problem">
+            <h1 class="problem-font">문의</h1>
+        </div>
+        <a href="problem-1.html" target="problem-main"><div class="type1"><h1 class="type1-font">사이트 관련 문의</h1></div></a>
+        <a href="problem-2.html" target="problem-main"><div class="type2"><h1 class="type2-font">잡지식 제보</h1></div></a>
+        <iframe src="problem-1.html" name="problem-main"></iframe>
+        <a href="op.html"><input id="sub" type="submit" value="☞제출"></a>
+        <input id="home" type="button" value="Ⅹ창 닫기" onclick="window.close()">
+    </div>
+</body>
+</html>
